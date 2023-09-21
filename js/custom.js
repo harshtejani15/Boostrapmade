@@ -8,6 +8,20 @@ $('.toggle').click(function() {
 
 
 
+$('.has-dropdown').click(function() {
+	$('.dd-box-shadow').toggleClass('dropdown-active');
+
+})
+
+
+$('#dd-box-shadow ').click(function() {
+	$('.drowpdown-menu-ul').toggleClass('dropdown-active');
+
+})
+
+
+
+
 
 
 
