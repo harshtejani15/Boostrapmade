@@ -116,6 +116,16 @@
 	.drowpdown-menu-ul{
 		display: none;
 	}
+
+	.about .icon-boxes .col-md-6:nth-child(2) .icon-box, .about .icon-boxes .col-md-6:nth-child(4) .icon-box {
+	    margin-top: 0px;
+	}
+
+	.stats {
+	    background-position-y: -645px;
+	    background-position-x: 870px;
+	}
+
 }
 
 @media (max-width: 768px){
