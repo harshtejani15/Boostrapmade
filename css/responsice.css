@@ -154,4 +154,14 @@
 	    font-size: 16px;
 	    margin: 0 4px;
 	}
+
+	.scroll-top a svg {
+	    height: 25px;
+	    width: 25px;
+	}
+
+	.scroll-top a {
+	    width: 30px;
+	    height: 30px;
+	}
 }
