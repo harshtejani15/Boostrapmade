@@ -190,7 +190,7 @@ img {
 }
 body p {
     color: #5b6770;
-    font-size: 15px;
+    font-size: 1rem;
     margin: 0 0 15px;
     font-weight: 400;
     line-height: 160%;
@@ -1051,3 +1051,242 @@ body .form-control:focus{
     color: var(--primary-color);
 }
 /**/
+
+/**/
+
+.pricing{
+    padding: 60px 0 120px 0;
+}
+
+.pricing .section-title {
+    margin-bottom: 40px;
+}
+
+.pricing .pricing-item {
+    box-shadow: 0 3px 20px -2px rgba(var(--default-color-rgb), 0.1);
+    padding: 60px 40px;
+    height: 100%;
+    position: relative;
+    border-radius: 15px;
+}
+
+.pricing h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pricing .icon {
+    margin: 30px auto 20px auto;
+    width: 70px;
+    height: 70px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    transform-style: preserve-3d;
+}
+
+.pricing .icon:before {
+    position: absolute;
+    content: "";
+    height: 86px;
+    width: 86px;
+    border-radius: 50%;
+    background: rgba(var(--primary-color-rgb), 0.2);
+    transition: all 0.3s ease-out 0s;
+    transform: translateZ(-1px);
+}
+
+.pricing .icon:after {
+    position: absolute;
+    content: "";
+    height: 102px;
+    width: 102px;
+    border-radius: 50%;
+    background: rgba(var(--primary-color-rgb), 0.1);
+    transition: all 0.3s ease-out 0s;
+    transform: translateZ(-2px);
+}
+
+.pricing .icon svg {
+    color: var(--background-color);
+    height: 30px;
+    width: 30px;
+    transition: ease-in-out 0.3s;
+    line-height: 0;
+}
+
+.pricing h4 {
+    font-size: 48px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: var(--heading-font);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.pricing h4 sup {
+    font-size: 28px;
+}
+
+
+.pricing h4 span {
+    color: rgba(var(--default-color-rgb), 0.5);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.pricing ul {
+    padding: 20px 0;
+    list-style: none;
+    color: rgba(var(--default-color-rgb), 0.8);
+    text-align: left;
+    line-height: 20px;
+}
+
+.pricing ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.pricing ul svg {
+    color: #059652;
+    width: 24px;
+    height: 24px;
+    padding-right: 3px;
+}
+
+.pricing ul .na {
+    color: rgba(var(--default-color-rgb), 0.3);
+}
+
+.pricing ul .na svg {
+    color: rgba(var(--default-color-rgb), 0.3);
+}
+
+.pricing ul .na span {
+    text-decoration: line-through;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.pricing .buy-btn {
+    color: rgba(var(--default-color-rgb), 0.8);
+    background-color: var(--contrast-color);
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(var(--default-color-rgb), 0.2);
+    transition: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.pricing .buy-btn:hover{
+    background-color: #e84545;
+    color: #fff;
+}
+
+.pricing .featured .buy-btn {
+    background-color: var(--primary-color);
+    color: var(--contrast-color);
+}
+
+.pricing .featured {
+    z-index: 10;
+    border: 3px solid var(--primary-color);
+}
+
+.pricing .featured {
+    transform: scale(1.15);
+}
+/**/
+
+/*scroll top*/
+
+.scroll-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999999;
+}
+
+.scroll-top a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e84545;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.scroll-top a svg{
+    height: 30px;
+    width: 30px;
+}
+
+.scroll-top a svg path{
+    fill: #fff;
+}
+/*scroll top end*/
+
+.faq .content h3 {
+    font-weight: 400;
+    font-size: 34px;
+}
+
+.faq .content p {
+    font-size: 15px;
+    color: rgba(var(--default-color-rgb), 0.7);
+}
+
+.accordion-item {
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 25px 0px rgba(var(--default-color-rgb), 0.1);
+    overflow: hidden;
+}
+
+
+.faq .accordion-item h3 .num {
+    color: var(--primary-color);
+    padding-right: 5px;
+}
+
+
+
+.faq .accordion-item h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 30px 0 0;
+    transition: 0.3s;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+}
+
+.accordion-button:not(.collapsed) {
+    color: transparent;
+    background-color: transparent;
+    box-shadow: 0;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent !important;
+}
+
+.accordion-item button{
+    padding: 20px;
+}

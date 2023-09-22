@@ -1,6 +1,19 @@
+$(window).scroll(function() {
+    if ($(this).scrollTop()) {
+        $('#scroll-top').fadeIn();
+    } else {
+        $('#scroll-top').fadeOut();
+    }
+});
+
+$("#scroll-top").click(function() {
+    $("html, body").animate({
+    	scrollTop: 0
+    }, 0);
+ });
+
+
 $(document).ready(function () {
-
-
 
 $('.toggle').click(function() {
 	$("body").toggleClass('menu_open');
@@ -18,6 +31,15 @@ $('#dd-box-shadow ').click(function() {
 	$('.drowpdown-menu-ul').toggleClass('dropdown-active');
 
 })
+
+
+$('.accordion-button').click(function() {
+	$('.accordion-button').toggleClass('faq-active');
+
+})
+
+
+
 
 	
 
@@ -80,8 +102,12 @@ $('#dd-box-shadow ').click(function() {
 });
 
 
+
 $(window).load(function(){
 	$('.cssloader-parent').fadeOut(1000,function(){
 		$(this).remove();
 	});
 });
+
+
+

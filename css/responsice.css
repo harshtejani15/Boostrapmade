@@ -128,6 +128,10 @@
 
 }
 
+@media (max-width:992px){
+
+}
+
 @media (max-width: 768px){
 	.hero-sec h2 {
     	font-size: 32px;
@@ -135,6 +139,9 @@
 
 	.hero-sec p {
 	    font-size: 18px;
+	}
+	.pricing .featured {
+	    transform: scale(1);
 	}
 }
 
