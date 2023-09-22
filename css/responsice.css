@@ -149,4 +149,9 @@
 	.clients .client-logo img {
 	    padding: 20px;
 	}
+
+	.team .member .member-img .member-socail a {
+	    font-size: 16px;
+	    margin: 0 4px;
+	}
 }
