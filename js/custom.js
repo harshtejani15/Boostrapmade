@@ -15,6 +15,7 @@ $("#scroll-top").click(function() {
 
 $(document).ready(function () {
 
+
 $('.toggle').click(function() {
 	$("body").toggleClass('menu_open');
 })
@@ -32,16 +33,35 @@ $('#dd-box-shadow ').click(function() {
 
 })
 
-
-$('.accordion-button').click(function() {
-	$('.accordion-button').toggleClass('faq-active');
-
+$('.testimonial').owlCarousel({
+    loop:true,
+    margin:10,
+    dots:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
 })
 
 
-
-
 	
+	/**
+	 * Frequently Asked Questions Toggle
+	 */
+	document.querySelectorAll('.accordion-item h2').forEach((faqItem) => {
+	  faqItem.addEventListener('click', () => {
+	    faqItem.parentNode.classList.toggle('faq-active');
+	  });
+	});
 
   /**
      * Init isotope layout and filters
@@ -103,11 +123,13 @@ $('.accordion-button').click(function() {
 
 
 
+
+
+// jss
 $(window).load(function(){
 	$('.cssloader-parent').fadeOut(1000,function(){
 		$(this).remove();
 	});
 });
-
 
 

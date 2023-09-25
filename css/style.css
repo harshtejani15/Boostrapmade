@@ -1257,14 +1257,14 @@ body .form-control:focus{
 }
 
 
-.faq .accordion-item h3 .num {
+.accordion-item .accordion-header h3 .num {
     color: var(--primary-color);
     padding-right: 5px;
 }
 
 
 
-.faq .accordion-item h3 {
+.accordion-item .accordion-header h3 {
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
@@ -1364,4 +1364,242 @@ body .form-control:focus{
     margin-bottom: 0;
 }
 
+.faq-active .accordion-header h3{
+    color: #e84545;
+}
+
 /*team sec end*/
+
+/**/
+
+.call-to-action{
+    background: url('../images/cta-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+    padding: 80px 0;
+    font-family:  'Montserrat';
+}
+
+.call-to-action:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.call-to-action h3{
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.call-to-action p{
+    color: #fff;
+}
+
+.call-to-action .call-btn{
+        font-family:  'Montserrat';
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 40px;
+        border-radius: 5px;
+        transition: 0.5s;
+        margin: 10px;
+        border: 2px solid #fff;
+        color: #fff;
+}
+
+.call-to-action .call-btn:hover{
+    background-color: #e84545;
+    border: 2px solid #e84545;
+}
+
+/**/
+
+/**/
+
+.testimonials{
+    background-color: #f4f4f4;
+}
+
+.info p{
+    margin-bottom: 10px !important;
+}
+
+.testimonials .info h3 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.testimonial-top{
+    display: flex;
+}
+
+
+.testimonial-slides .testimonial-top .tetst-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    border: 6px solid #f4f4f4;
+    margin: 0;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.tetst-text h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+
+.tetst-text h4{
+    font-size: 14px;
+    margin: 0;
+    color: rgba(33, 37, 41, 0.5);
+}
+
+.testimonial-slides .slide {
+    width: 100%;
+    max-width: 100%;
+    padding: 30px;
+}
+
+.tetst-text .star{
+    margin: 10px 0;
+}
+
+.tetst-text .star i{
+    color: #ffc107;
+    margin: 0 1px;
+}
+
+.testimonial-bottom i{
+    color: rgba(232, 69, 69, 0.4);
+    line-height: 0;
+}
+
+.testimonials .testimonial-slides{
+        box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
+        background-color: #fff;
+}
+
+.testimonial-slides .owl-dots button span{
+    height: 10px;
+    width: 10px;
+    background-color: rgba(33, 37, 41, 0.15);
+    display: inline-block;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.testimonial-slides .owl-dots{
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-slides .owl-dots .active span{
+    background-color: #e84545;
+} 
+
+/**/
+
+
+/**/
+
+
+.post-area .Post-ara-box{
+    box-shadow: 0 4px 16px rgba(33, 37, 41, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.post-area > div  .post-img {
+    margin: -30px -30px 15px -30px ;
+}
+
+
+.post-area div .post-text p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: rgba(33, 37, 41, 0.5);
+}
+
+.post-area div .post-text h2{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.post-area div .post-text h2 a{
+    color: #32353a;
+}
+
+.post-area div .post-text h2 a:hover{
+    color: #e84545;
+}
+
+.post-text .post-meta-names .post-meta-img {
+    width: 50px;
+    border-radius: 100%;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.post-text .post-meta-names .post-meta h4{
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.post-text .post-meta-names .post-meta span{
+    display: block;
+    font-size: 14px;
+    color: rgba(33, 37, 41, 0.5);;
+}
+
+ /**/
+
+/* */
+
+.contact .info-team  {
+    background: rgba(33, 37, 41, 0.03);
+    padding: 30px;
+}
+
+.contact .info-team i {
+    font-size: 38px;
+    line-height: 0;
+    color:#e84545;
+}
+
+.contact .info-team h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+}
+
+.contact .info-team p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+.g-4, .gy-4 {
+    --bs-gutter-y: 1.5rem;
+}
+/*  */
