@@ -164,4 +164,8 @@
 	    width: 30px;
 	    height: 30px;
 	}
+
+	.section-title h2 {
+	    font-size: 27px;
+	}
 }

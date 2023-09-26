@@ -76,6 +76,11 @@ button {
     -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
 }
+
+a:hover {
+    color: rgba(var(--primary-color-rgb), 0.7);
+    text-decoration: none;
+}
 a,
 span,
 div a:hover,
@@ -116,12 +121,10 @@ body ul {
     padding: 0;
 }
 
-body a {
-    outline: none;
-    color: #555;
-}
-body a:hover {
-    color: #000;
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: 0.3s;
 }
 body .clearfix,
 body .clear {
@@ -368,6 +371,7 @@ header{
 
 .fixed{
     background-color: #fff;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1)
 }
 
 .header .logo h1 {
@@ -599,24 +603,6 @@ body .form-control:focus{
     color: var(--contrast-color);
 }
 
-.form-control {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #000;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: #FFF;
-    background-clip: padding-box;
-    border: 1px solid var(--bs-border-color);
-    border-radius: var(--bs-border-radius);
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
 .hero-sec .sign-up-form {
     margin-top: 20px;
     padding: 10px;
@@ -653,6 +639,19 @@ body .form-control:focus{
 .clients .client-logo img:hover {
     filter: none;
     opacity: 1;
+}
+
+.contact .php-email-form button[type=submit] {
+    background: var(--primary-color);
+    color: var(--contrast-color);
+    border: 0;
+    padding: 10px 30px;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.contact .php-email-form button[type=submit]:hover{
+    background: rgba(var(--primary-color-rgb), 0.8);
 }
 
 
@@ -1173,10 +1172,6 @@ body .form-control:focus{
     text-decoration: line-through;
 }
 
-.text-center {
-    text-align: center!important;
-}
-
 .pricing .buy-btn {
     color: rgba(var(--default-color-rgb), 0.8);
     background-color: var(--contrast-color);
@@ -1487,6 +1482,10 @@ body .form-control:focus{
     line-height: 0;
 }
 
+.testimonial-bottom p{
+    font-style: italic;
+}
+
 .testimonials .testimonial-slides{
         box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
         background-color: #fff;
@@ -1602,4 +1601,120 @@ body .form-control:focus{
 .g-4, .gy-4 {
     --bs-gutter-y: 1.5rem;
 }
+
+.contact .php-email-form{
+    background: rgba(33, 37, 41, 0.03);
+    padding: 30px;
+    height: 100%;
+}
+
+.contact .php-email-form input[type=text], .contact .php-email-form input[type=email], .contact .php-email-form textarea {
+    font-size: 14px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border-radius: 0;
+    color: var(--default-color);
+    background-color: rgba(var(--background-color-rgb), 0.5);
+    border-color: rgba(var(--default-color-rgb), 0.2);
+}
 /*  */
+
+/**/
+
+.footer {
+    --background-color: #f4f4f4;
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-size: 14px;
+    padding-bottom: 50px;
+}
+
+.footer .footer-top {
+    padding-top: 50px;
+}
+
+.footer .footer-about .logo span{
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+}
+
+.footer .footer-about .logo {
+    line-height: 0;
+    margin-bottom: 25px;
+}
+
+.footer .footer-about p {
+    font-size: 15px;
+}
+
+.footer .social-links a{
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgba(36, 37, 41, 0.5);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: rgba(var(--default-color-rgb), 0.5);
+}
+
+.footer .social-links a:hover{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.footer .footer-links {
+    margin-bottom: 30px;
+}
+.footer h4 {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer .footer-links ul li {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-links ul a {
+    color: rgba(var(--default-color-rgb), 0.8);
+    display: inline-block;
+    line-height: 1;
+}
+
+.footer .footer-links ul li a:hover{
+    color: #e84545;
+}
+
+.footer .footer-contact p {
+    margin-bottom: 5px;
+}
+
+.footer .footer-bottom {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: rgba(var(--default-color-rgb), 0.05);
+}
+
+.footer .credits {
+    margin-top: 6px;
+    font-size: 13px;
+}
+.footer-bottom p{
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+
+
+
+/**/
